@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Produk</title>
+</head>
+
+<body>
+
+    <h1>Daftar Produk RPL</h1>
+
+    <script>
+        function tampilkanProduk(nomor, nama, harga) {
+            console.log(
+                nomor + ". " + nama + " - Rp" + harga
+            );
+        }
+
+        for (let i = 1; i <= 5; i++) {
+            tampilkanProduk(i, "Produk " + i, i * 15000);
+        }
+    </script>
+
+</body>
+
+</html>

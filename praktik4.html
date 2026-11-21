@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Praktik Function dan Return</title>
+</head>
+
+<body>
+    <h1>Kalkulator Sederhana</h1>
+    <script>
+        function hitungTotal(harga, jumlah) {
+            let total = harga * jumlah;
+            return total;
+        }
+        let totalBelanja = hitungTotal(15000, 3);
+        console.log("Harga satuan: Rp15.000");
+        console.log("Jumlah barang: 3");
+        console.log("Total belanja: Rp" + totalBelanja);
+
+
+        function hitungDiskon(diskon, harga){
+            let besarDiskon = harga * diskon / 100;
+            let hargaAkhir = harga - besarDiskon;
+            return hargaAkhir;
+        }
+        let hasil = hitungDiskon(100000, 10);
+        console.log("Harga setelah diskon: Rp" + hasil);
+    </script>
+</body>
+
+</html>
